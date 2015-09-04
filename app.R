@@ -9,6 +9,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$hist <- renderText({
+  input$hist
   })
 }
 
