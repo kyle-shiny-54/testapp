@@ -8,8 +8,7 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  output$hist <- renderTable({
-    matrix(1, 5, 5)
+  output$hist <- renderText({
   })
 }
 
