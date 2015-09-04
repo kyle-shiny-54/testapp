@@ -8,8 +8,8 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  output$hist <- renderPlot({
-    hist(rnorm(1:100))
+  output$hist <- renderTable({
+    matrix(1, 5, 5)
   })
 }
 
