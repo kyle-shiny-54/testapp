@@ -9,7 +9,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$hist <- renderPlot({
-    hist(rnorm(input$num))
+    hist(rnorm(1:100))
   })
 }
 
